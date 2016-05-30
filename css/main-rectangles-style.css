@@ -1,0 +1,184 @@
+/*****************************\
+		#GENERAL-RESET
+\*****************************/
+body {
+	margin: 0;
+	background: #e4e4e4;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.btn {
+	background:#76c9d8;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	color:white;
+	padding:6px 15px;
+	outline:0;
+	cursor: pointer;
+
+	transition:all 0.4s linear;
+}
+
+	.btn:hover {
+		background:#7a797a;
+
+		transition:all 0.4s linear;
+	}
+
+/*****************************\
+		#CONTENT-CONTAINER
+\*****************************/
+.content-container {
+	position: relative;
+	overflow: hidden;
+	float:left;
+	width:30%;
+	min-height: 500px;
+	
+	background: white;
+	padding:5px;
+	margin-top:15px;
+	border:1px solid black;
+}
+
+@media ( max-width : 725px ) {
+	.content-container {
+		min-height: 400px;
+		width:100%;
+		float: none;
+	}
+}
+
+@media ( min-width : 800px ) {
+	.content-container {
+		left: 10px;
+		width:35%;
+	}
+}
+
+@media ( min-width : 1000px ) {
+	.content-container {
+		left: 10%;
+		width:30%;
+	}
+}
+
+
+/*****************************\
+		#PRIMARY-HEADER
+\*****************************/
+.primary-header {
+	text-align: center;
+	border-bottom:5px solid #76c9d8;
+}
+
+	.primary-title {
+		font-size:35px;
+		margin:15px 0 5px;
+		color:#444;
+	}
+
+	.secondary-title {
+		font-size: 25px;
+		margin:0 0 5px;
+		color:#5e5e5e;
+
+	}
+
+
+/*****************************\
+		#RECTANGLE-UI
+\*****************************/
+.rectangle-ui {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+	.rectangle-ui > h2 {
+		margin-top:20px;
+	}
+
+	.rectangle-ui > ul {
+		padding-left:25px;
+	}
+
+		.rectangle-ui > ul > li {
+			color:#5e5e5e;
+		}
+	
+	.rectangle-compare-results-container {
+		padding-top:15px;
+		margin-top:10px;
+		border-top:5px solid #76c9d8;
+		color:#76c9d8;
+		font-size:22px;
+		
+	}
+
+		.rectangle-compare-results-container > h2 {
+			margin-top:10px;
+		}
+
+			#rectangle-compare-results {
+				min-height: 22px;
+			}
+
+/*****************************\
+		#RECTANGLE-CONTAINER
+\*****************************/
+.rectangle-container {
+	float:right;
+	width:50%;
+	min-width: 500px;
+}
+
+@media ( max-width : 725px ) {
+	.rectangle-container {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media ( min-width : 800px ) {
+	.rectangle-container {
+		margin-right: 10px;
+	}
+}
+
+@media ( min-width : 1000px ) {
+	.rectangle-container {
+		margin-right: 10%;
+	}
+}
+
+
+	#rectangle-area {
+		margin:15px auto;
+		width:500px;
+		height: 500px;
+		border:1px solid black;
+		position: relative;
+		background: white;
+	}
+
+		.JDRectangle {
+			border:1px solid #CCC;
+			background: transparent;
+		}
+
+		.JDRectangle:hover, .JDRectangle.selected {
+			background: rgba(50,50,50,0.6);
+			border-color: #999;
+			cursor: pointer;
+
+			transition:all 0.4s linear;
+		}
+
+		.JDRectangle.highlight-background {
+			background:#76c9d8;
+		}
+

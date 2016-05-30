@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rectangles | Justin D'Ottavio</title>
+        <meta name="description" content="Comparing the spatial relationships of various rectangles.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/main-rectangles-style.css" type="text/css" media="all">
+    </head>
+    <body>
+        <section class="content-container">
+        	<header class="primary-header">
+        		<h1 class="primary-title">Rectangles</h1>
+        		<h2 class="secondary-title">Comparing the spatial relationships of various rectangles.</h2>
+        	</header>
+	    	<section class="rectangle-ui">
+                <h2 class="secondary-title">Instructions</h2>
+                <ul>
+                    <li>Click the draw rectange button to add random rectangles to the page.</li>
+    			 	<li>Select any two rectangles by clicking one, then the other to see their spatial relationship.</li>
+    			</ul>
+	    		<button class="btn" id="btn-draw">Draw Rectangle</button>
+                <button class="btn" id="btn-reset">Clear Rectangles</button>
+                <div class="rectangle-compare-results-container">
+                    <h2 class="secondary-title">Results</h2>
+                    <section id="rectangle-compare-results"></section>
+                </div>
+	    	</section>
+        </section>
+    	<section class="rectangle-container">
+    		<section id="rectangle-area"></section>
+    	</section>  		
+    	<script src="js/rectangles.js"></script>
+    </body>
+</html>
